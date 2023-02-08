@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import { Plus_Jakarta_Sans as PJSans } from "@next/font/google";
 
 const pjsans = PJSans({ subsets: ["latin"] });
@@ -26,8 +25,6 @@ export default function App({ Component, pageProps }) {
           font-size: 1.6rem;
           font-family: ${pjsans.style.fontFamily};
           overflow-x: hidden;
-          background-color: #121128;
-          color: #fff;
         }
         img {
           width: 100%;
