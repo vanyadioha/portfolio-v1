@@ -1,3 +1,4 @@
+import { Layout } from "@/reuseables";
 import { Plus_Jakarta_Sans as PJSans } from "@next/font/google";
 
 const pjsans = PJSans({ subsets: ["latin"] });
@@ -48,7 +49,9 @@ export default function App({ Component, pageProps }) {
           font-weight: 500;
         }
       `}</style>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
