@@ -1,7 +1,8 @@
 import { Layout } from "@/reuseables";
-import { Plus_Jakarta_Sans as PJSans } from "@next/font/google";
+import { Space_Mono as SpaceMono } from "@next/font/google";
 
-const pjsans = PJSans({ subsets: ["latin"] });
+const smReg = SpaceMono({ subsets: ["latin"], weight: "400" });
+const smBold = SpaceMono({ subsets: ["latin"], weight: "700" });
 export default function App({ Component, pageProps }) {
   return (
     <>
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }) {
           padding: 0;
           margin: 0;
           box-sizing: border-box;
+          font-family: ${smReg.style.fontFamily};
         }
         ul {
           list-style: none;
@@ -24,7 +26,6 @@ export default function App({ Component, pageProps }) {
         }
         body {
           font-size: 1.6rem;
-          font-family: ${pjsans.style.fontFamily};
           overflow-x: hidden;
         }
         img {
@@ -39,14 +40,10 @@ export default function App({ Component, pageProps }) {
         h4,
         h5,
         h6 {
-          font-weight: 700;
+          font-family: ${smBold.style.fontFamily};
         }
         button {
-          font-family: ${pjsans.style.fontFamily};
           font-size: 1.6rem;
-        }
-        p {
-          font-weight: 500;
         }
       `}</style>
       <Layout>
