@@ -26,6 +26,7 @@ const StyledProjects = styled.section`
           display: inline-block;
           margin-right: 2rem;
           font-size: 2rem;
+          color: black;
           &:visited,
           &:active {
             color: black;
