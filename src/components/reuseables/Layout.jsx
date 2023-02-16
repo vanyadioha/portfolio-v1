@@ -5,7 +5,7 @@ import Nav from './Nav'
 
 const StyledMain = styled.main`
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color:hsla(0,0%,100%,1);
 background-image:
 radial-gradient(at 76% 24%, hsla(155,0%,90%,1) 0px, transparent 50%),
@@ -15,14 +15,12 @@ radial-gradient(at 54% 51%, hsla(0,2%,67%,1) 0px, transparent 50%),
 radial-gradient(at 24% 25%, hsla(0,0%,90%,1) 0px, transparent 50%);
     > div {
         width: 100%;
-        height: 100%;
         backdrop-filter: blur(2rem);
         overflow: scroll;
         overflow-x: hidden;
         padding: 8.3rem 8rem 5.3rem;
         &::-webkit-scrollbar {
             width: 1.2rem;
-            /* margin-block: ; */
         }
     
  &::-webkit-scrollbar-track {
