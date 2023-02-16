@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { AiOutlineTwitter, AiOutlineLinkedin, AiOutlineGithub, AiOutlineCopyrightCircle } from 'react-icons/ai'
+import { AiOutlineTwitter, AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail, AiOutlineCopyrightCircle } from 'react-icons/ai'
 
 const StyledFooter = styled.footer`
     height: 5rem;
@@ -29,6 +29,11 @@ const StyledFooter = styled.footer`
 
 const Footer = () => {
     const socials = [
+        {
+            name: 'MA',
+            icon: AiOutlineMail,
+            link: "mailto:talk2okwundu@outlook.com?subject=Let's work together!&body=Hello Victor, I would like us to work together on a project.",
+        },
         {
             name: 'TW',
             icon: AiOutlineTwitter,
