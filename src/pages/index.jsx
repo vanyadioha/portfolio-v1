@@ -1,5 +1,5 @@
-import { Hero } from "@/components/index";
-import { HeadElement } from "@/reuseables";
+import { Hero } from "../components/index/hero/Hero";
+import { HeadElement } from "../components/reuseables/Head";
 
 export default function Home() {
   return (

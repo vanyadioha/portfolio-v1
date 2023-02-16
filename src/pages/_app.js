@@ -1,4 +1,4 @@
-import { Layout } from "@/reuseables";
+import { Layout } from "../components/reuseables/Layout";
 import { Space_Mono as SpaceMono } from "@next/font/google";
 
 const smReg = SpaceMono({ subsets: ["latin"], weight: "400" });
