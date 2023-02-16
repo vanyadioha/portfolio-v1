@@ -1,4 +1,4 @@
-import { Hero, Skills } from "../components/index";
+import { Hero, Skills, Projects } from "../components/index";
 import { HeadElement } from "../components/reuseables/Head";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <HeadElement />
       <Hero />
       <Skills />
+      <Projects />
     </>
   );
 }
