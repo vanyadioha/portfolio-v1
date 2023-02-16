@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const StyledSkills = styled.section`
+  padding: 2rem 0;
   h1 {
     width: 100%;
     padding: 1rem 0;
