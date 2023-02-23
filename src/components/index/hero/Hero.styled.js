@@ -7,6 +7,7 @@ const StyledHero = styled.header`
   display: grid;
   place-items: center;
   padding: 4rem;
+
   h1 {
     font-size: 12rem;
   }

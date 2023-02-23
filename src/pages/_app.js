@@ -27,6 +27,32 @@ export default function App({ Component, pageProps }) {
         body {
           font-size: 1.6rem;
           overflow-x: hidden;
+          background-color: hsla(0, 0%, 100%, 1);
+          background-image: radial-gradient(
+              at 76% 24%,
+              hsla(155, 0%, 90%, 1) 0px,
+              transparent 50%
+            ),
+            radial-gradient(
+              at 78% 74%,
+              hsla(148, 0%, 90%, 1) 0px,
+              transparent 50%
+            ),
+            radial-gradient(
+              at 25% 72%,
+              hsla(110, 0%, 90%, 1) 0px,
+              transparent 50%
+            ),
+            radial-gradient(
+              at 54% 51%,
+              hsla(0, 2%, 67%, 1) 0px,
+              transparent 50%
+            ),
+            radial-gradient(
+              at 24% 25%,
+              hsla(0, 0%, 90%, 1) 0px,
+              transparent 50%
+            );
         }
         img {
           width: 100%;
