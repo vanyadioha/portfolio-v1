@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledAbout = styled.main`
+const StyledAbout = styled.section`
   width: 100%;
   display: flex;
   height: 80vh;
