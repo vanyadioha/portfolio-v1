@@ -26,6 +26,9 @@ const StyledFooter = styled.footer`
             }
         }
     }
+    @media only screen and (max-width: 480px){
+        width: calc(100% - 4rem);
+    }
 `
 
 const Footer = () => {

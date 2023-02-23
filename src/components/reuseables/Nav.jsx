@@ -23,8 +23,8 @@ const StyledNav = styled.nav`
             font-size: 3rem;
         }
     }
-    @media only screen and (max-width: 1536px){
-        
+    @media only screen and (max-width: 480px){
+        width: calc(100% - 4rem);
     }
 `
 

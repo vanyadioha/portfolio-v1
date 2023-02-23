@@ -7,7 +7,6 @@ import { ReachOut } from './ReachOut'
 
 const StyledMain = styled.main`
     width: 100vw;
-    /* max-width: 153.6rem; */
     background-color:hsla(0,0%,100%,1);
 background-image:
 radial-gradient(at 76% 24%, hsla(155,0%,90%,1) 0px, transparent 50%),
@@ -48,6 +47,11 @@ radial-gradient(at 24% 25%, hsla(0,0%,90%,1) 0px, transparent 50%);
   background: #aaa; 
 }
     }
+@media only screen and (max-width: 480px) {
+    > div {
+        padding: 8.3rem 2rem 5rem;
+    }
+}
 `
 
 export const Layout = ({ children }) => {
