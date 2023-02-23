@@ -17,35 +17,14 @@ radial-gradient(at 24% 25%, hsla(0,0%,90%,1) 0px, transparent 50%);
     > div {
         width: 100%;
         backdrop-filter: blur(2rem);
-        overflow: scroll;
-        overflow-x: hidden;
         padding: 8.3rem 8rem 5.3rem;
         display: grid;
         justify-items: center;
+        overflow-x: hidden;
         > div {
             width: 100%;
             max-width: 153.6rem;
         }
-        &::-webkit-scrollbar {
-            width: 1.2rem;
-        }
-    
- &::-webkit-scrollbar-track {
-  background: #555;
-    border-radius: 5rem;
-}
- 
-
-&::-webkit-scrollbar-thumb {
-  background: #888;
-    border-radius: 5rem;
-  border: 0.3rem solid #555;
-}
-
-
-&::-webkit-scrollbar-thumb:hover {
-  background: #aaa; 
-}
     }
 @media only screen and (max-width: 480px) {
     > div {
