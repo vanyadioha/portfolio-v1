@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const StyledNav = styled.nav`
     width: calc(100% - 16rem);
+    max-width: 153.6rem;
     height: 8rem;
     position: fixed;
     top: 0;
@@ -21,6 +22,9 @@ const StyledNav = styled.nav`
             transform: translate(-50%, -50%);
             font-size: 3rem;
         }
+    }
+    @media only screen and (max-width: 1536px){
+        
     }
 `
 

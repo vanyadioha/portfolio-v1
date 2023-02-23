@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import Footer from './Footer'
 import Nav from './Nav'
+import { useRouter } from 'next/router'
+import { ReachOut } from './ReachOut'
 
 const StyledMain = styled.main`
     width: 100vw;
-    /* height: 100vh; */
+    /* max-width: 153.6rem; */
     background-color:hsla(0,0%,100%,1);
 background-image:
 radial-gradient(at 76% 24%, hsla(155,0%,90%,1) 0px, transparent 50%),
@@ -19,6 +21,12 @@ radial-gradient(at 24% 25%, hsla(0,0%,90%,1) 0px, transparent 50%);
         overflow: scroll;
         overflow-x: hidden;
         padding: 8.3rem 8rem 5.3rem;
+        display: grid;
+        justify-items: center;
+        > div {
+            width: 100%;
+            max-width: 153.6rem;
+        }
         &::-webkit-scrollbar {
             width: 1.2rem;
         }
@@ -43,12 +51,16 @@ radial-gradient(at 24% 25%, hsla(0,0%,90%,1) 0px, transparent 50%);
 `
 
 export const Layout = ({ children }) => {
+    const route = useRouter();
     return (
         <StyledMain>
             <div>
-                <Nav />
-                {children}
-                <Footer />
+                <div>
+                    <Nav />
+                    {children}
+                    {route.pathname !== "/" && <ReachOut />}
+                    <Footer />
+                </div>
             </div>
         </StyledMain>
     )

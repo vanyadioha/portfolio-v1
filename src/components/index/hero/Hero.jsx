@@ -11,7 +11,7 @@ export const Hero = () => {
                 </p>
                 <div className="hero-btn-container">
                     <button>Download my Resume</button>
-                    <button>Say Hello</button>
+                    <button>Want to know more?</button>
                 </div>
             </section>
             <div className="hero-img-container">

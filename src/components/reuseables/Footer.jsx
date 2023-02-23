@@ -4,6 +4,7 @@ import { AiOutlineTwitter, AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail, Ai
 const StyledFooter = styled.footer`
     height: 5rem;
     width: calc(100% - 16rem);
+    max-width: 153.6rem;
     padding: 2rem 0;
     position: absolute;
     bottom: 0;
