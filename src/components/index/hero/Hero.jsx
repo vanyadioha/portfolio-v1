@@ -14,11 +14,11 @@ export const Hero = () => {
                     <button>Want to know more?</button>
                 </div>
             </section>
-            <div className="hero-img-container">
+            <section className="hero-img-container">
                 <img
                     src="./assets/hero-image.jpg"
                     alt="'The developer' in question" />
-            </div>
+            </section>
         </StyledHero>
     )
 }

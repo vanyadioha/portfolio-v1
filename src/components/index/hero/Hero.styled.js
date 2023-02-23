@@ -4,6 +4,7 @@ const StyledHero = styled.main`
   width: 100%;
   display: flex;
   height: 80vh;
+  max-height: 80rem;
   padding: 2rem 0;
   justify-content: space-between;
   .hero-text-container,
@@ -39,7 +40,19 @@ const StyledHero = styled.main`
       }
     }
   }
-  .hero-img-container {
+  @media only screen and (max-width: 960px) {
+    height: auto;
+    max-height: none;
+    .hero-img-container {
+      display: none;
+    }
+    .hero-text-container {
+      flex-basis: 100%;
+      div {
+        position: static;
+        margin-top: 2rem;
+      }
+    }
   }
 `;
 export default StyledHero;
