@@ -11,28 +11,5 @@ const StyledContactForm = styled.section`
   p {
     margin-bottom: 2rem;
   }
-  form {
-    width: 100%;
-    label,
-    input,
-    textarea {
-      display: block;
-    }
-    label {
-      margin-bottom: 1rem;
-    }
-    input,
-    textarea {
-      width: 100%;
-      padding: 1rem;
-      margin-bottom: 2rem;
-    }
-    input {
-      &[type="submit"] {
-        background-color: black;
-        color: white;
-      }
-    }
-  }
 `;
 export default StyledContactForm;

@@ -65,7 +65,8 @@ export default function App({ Component, pageProps }) {
         h3,
         h4,
         h5,
-        h6 {
+        h6,
+        .reach-out {
           font-family: ${smBold.style.fontFamily};
         }
         button {

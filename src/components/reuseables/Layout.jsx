@@ -28,6 +28,7 @@ radial-gradient(at 24% 25%, hsla(0,0%,90%,1) 0px, transparent 50%);
 @media only screen and (max-width: 480px) {
     > div {
         padding: 8.3rem 2rem 14rem;
+        /* overflow-x: hidden; */
     }
 }
 `
@@ -40,7 +41,7 @@ export const Layout = ({ children }) => {
                 <div>
                     <Nav />
                     {children}
-                    {route.pathname !== "/" && <ReachOut />}
+                    <ReachOut />
                     <Footer />
                 </div>
             </div>
