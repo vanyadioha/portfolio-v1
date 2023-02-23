@@ -1,6 +1,6 @@
 import StyledAbout from "./About.styled"
 
-export const Hero = () => {
+export const About = () => {
     return (
         <StyledAbout>
             <section className="hero-text-container">
