@@ -11,18 +11,9 @@ const StyledNav = styled.nav`
     transform: translateX(-50%);
     text-align: center;
     border-bottom: .3rem solid #d0d0d0;
-    div {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-        }
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @media only screen and (max-width: 480px){
         width: calc(100% - 4rem);
     }
@@ -31,8 +22,11 @@ const StyledNav = styled.nav`
 const Nav = () => {
     return (
         <StyledNav>
-            <div>
-                <h1>Victor Anyadioha</h1>
+            <div className='clock-container'>
+                <h1>{'12:45'} WAT</h1>
+            </div>
+            <div className='theme-pill-container'>
+                theme
             </div>
         </StyledNav>
     )

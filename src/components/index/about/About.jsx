@@ -1,8 +1,8 @@
-import StyledHero from "./Hero.styled"
+import StyledAbout from "./About.styled"
 
 export const Hero = () => {
     return (
-        <StyledHero>
+        <StyledAbout>
             <section className="hero-text-container">
                 <h1>About Me</h1>
                 <p>
@@ -19,6 +19,6 @@ export const Hero = () => {
                     src="./assets/hero-image.jpg"
                     alt="'The developer' in question" />
             </section>
-        </StyledHero>
+        </StyledAbout>
     )
 }

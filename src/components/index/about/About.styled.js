@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledHero = styled.main`
+const StyledAbout = styled.main`
   width: 100%;
   display: flex;
   height: 80vh;
@@ -55,4 +55,4 @@ const StyledHero = styled.main`
     }
   }
 `;
-export default StyledHero;
+export default StyledAbout;
