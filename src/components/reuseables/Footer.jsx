@@ -28,6 +28,11 @@ const StyledFooter = styled.footer`
     }
     @media only screen and (max-width: 480px){
         width: calc(100% - 4rem);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
     }
 `
 

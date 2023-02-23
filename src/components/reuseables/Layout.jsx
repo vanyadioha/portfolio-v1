@@ -49,7 +49,7 @@ radial-gradient(at 24% 25%, hsla(0,0%,90%,1) 0px, transparent 50%);
     }
 @media only screen and (max-width: 480px) {
     > div {
-        padding: 8.3rem 2rem 5rem;
+        padding: 8.3rem 2rem 14rem;
     }
 }
 `
