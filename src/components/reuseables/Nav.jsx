@@ -9,11 +9,18 @@ const StyledNav = styled.nav`
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
+    /* background-color: #f0f0f0; */
+    backdrop-filter: blur(2rem);
+    /* text-align: center; */
+    display: grid;
+    place-items: center;
     border-bottom: .3rem solid #d0d0d0;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    h1 {
+        
+    }
     @media only screen and (max-width: 480px){
         width: calc(100% - 4rem);
     }
@@ -22,12 +29,13 @@ const StyledNav = styled.nav`
 const Nav = () => {
     return (
         <StyledNav>
-            <div className='clock-container'>
+            <h1>My Portfolio</h1>
+            {/* <div className='clock-container'>
                 <h1>{'12:45'} WAT</h1>
             </div>
             <div className='theme-pill-container'>
                 theme
-            </div>
+            </div> */}
         </StyledNav>
     )
 }
